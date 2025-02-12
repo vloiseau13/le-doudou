@@ -8,13 +8,13 @@ const router = express.Router();
 
 // Define item-related routes
 import itemActions from "./modules/item/itemActions";
-import eventActions from "./modules/event/eventActions";
 
 router.get("/api/items", itemActions.browse);
 router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
 /* ************************************************************************* */
+import eventActions from "./modules/event/eventActions";
 
 router.get("/api/event", eventActions.browse);
 router.post("/api/event", eventActions.add);
