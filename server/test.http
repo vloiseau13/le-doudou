@@ -1,0 +1,17 @@
+GET http://localhost:3310/api/event
+
+###
+
+POST http://localhost:3310/api/event HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Le chateau dans le ciel",
+    "theme":"Projection",
+    "poster":"",
+    "location":"Nantes",
+    "date_hour":"2025-02-16 21:00:00",
+    "description":"Projection du film le Chateau dans le ciel",
+    "price":20,
+    "user_id":1
+}
