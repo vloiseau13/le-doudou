@@ -4,6 +4,7 @@ import "./Connexion.css";
 function Connexion() {
   return (
     <div className="connexion">
+      <img src="..\src\assets\images\lapin_3.png" alt="" />
       <h1>Bienvenue sur le Doudou</h1>
       <Link to="/login">
         <button type="button">Se connecter</button>

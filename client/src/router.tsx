@@ -7,6 +7,7 @@ import Event from "./pages/Event/Event";
 import HomePage from "./pages/Homepage/HomePage";
 import Login from "./pages/Login/Login";
 import Random from "./pages/Random/Random";
+import Uservent from "./pages/UserEvent/UserEvent";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,12 @@ const router = createBrowserRouter([
       {
         path: "/create-account",
         element: <CreateAccount />,
+      },
+      {
+        path: "/user-event/:id",
+        element: <Uservent />,
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_API_URL}/api/event/${params.id}`),
       },
       {
         path: "/login",

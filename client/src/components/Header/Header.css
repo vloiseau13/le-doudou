@@ -43,3 +43,11 @@ header input::placeholder {
   height: 3em;
   width: 3em;
 }
+.creation-event {
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 1em;
+  font-family: var(--text-font);
+  border: none;
+}

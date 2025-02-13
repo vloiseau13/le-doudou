@@ -9,7 +9,9 @@
 
 .connexion button {
   border-radius: 8px;
-  background-color: var(--header-color);
+  background-color: var(--secondary-color);
   font-size: 1em;
   font-family: var(--text-font);
+  color: white;
+  border: none;
 }

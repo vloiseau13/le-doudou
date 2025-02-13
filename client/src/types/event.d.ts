@@ -23,3 +23,15 @@ export interface EventI {
   latitude: number;
   heure_fin: number;
 }
+
+export interface EventU {
+  id: number;
+  title: string;
+  theme: string;
+  poster: string;
+  location: string;
+  date_hour: string;
+  description: string;
+  price: number;
+  user_id: number;
+}

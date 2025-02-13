@@ -15,7 +15,7 @@ interface Events {
 }
 
 class eventRepository {
-  async readAll() {
+  async readAll(eventId?: number) {
     // Execute the SQL SELECT query to retrieve all items from the "item" table
     const [rows] = await databaseClient.query<Rows>("SELECT * FROM event");
 
@@ -40,6 +40,47 @@ class eventRepository {
 
     // Return the ID of the newly inserted item
     return result.insertId;
+  }
+
+  async read(id: number) {
+    const [rows] = await databaseClient.query<Rows>(
+      "SELECT * FROM event WHERE id = ?",
+      [id],
+    );
+    return rows;
+  }
+
+  async lastEvent() {
+    const [rows] = await databaseClient.query<Rows>(
+      "SELECT * FROM event ORDER BY id DESC LIMIT 3",
+    );
+
+    return rows;
+  }
+
+  async update(eventToUpdate: Partial<Events>) {
+    const [row] = await databaseClient.query<Result>(
+      "UPDATE event SET title = ?, theme = ?, poster = ?, location = ?, date_hour = ?, description = ?, price = ?, user_id = ? WHERE id = ?",
+      [
+        eventToUpdate.title,
+        eventToUpdate.theme,
+        eventToUpdate.poster,
+        eventToUpdate.location,
+        eventToUpdate.date_hour,
+        eventToUpdate.description,
+        eventToUpdate.price,
+        eventToUpdate.user_id,
+        eventToUpdate.id,
+      ],
+    );
+    return row.affectedRows;
+  }
+  async destroy(id: number) {
+    const [rows] = await databaseClient.query<Rows>(
+      "DELETE FROM event WHERE id = ?",
+      [id],
+    );
+    return rows;
   }
 }
 
