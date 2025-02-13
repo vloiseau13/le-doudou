@@ -1,0 +1,31 @@
+.card-event-section {
+  height: 20em;
+  max-height: 30em;
+  margin: 0 0 2em 0;
+}
+
+.card-event-detail :first-child {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-event-detail > summary {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 2em;
+}
+
+.card-event-detail[open] > summary {
+  visibility: hidden;
+  overflow-y: scroll;
+}
+
+.card-event-detail[open] > summary::before {
+  visibility: visible;
+  content: "Moins d'informations";
+  cursor: pointer;
+}
+
+.event-details {
+  width: 80%;
+}
