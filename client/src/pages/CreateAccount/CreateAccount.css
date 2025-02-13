@@ -1,0 +1,43 @@
+.create-account {
+  height: 79vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.form-account label {
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--header-color);
+}
+
+.form-account input {
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+
+.form-account input::placeholder {
+  color: white;
+  text-align: center;
+  font-family: var(--text-font);
+}
+
+.form-account button {
+  border-radius: 8px;
+  background-color: var(--header-color);
+  font-size: 1em;
+  font-family: var(--text-font);
+}

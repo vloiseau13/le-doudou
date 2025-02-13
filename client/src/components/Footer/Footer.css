@@ -1,0 +1,28 @@
+footer {
+  background-color: var(--header-color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+footer ul {
+  background-color: var(--header-color);
+  color: var(--secondary-color);
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}
+
+footer li {
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 1em;
+}

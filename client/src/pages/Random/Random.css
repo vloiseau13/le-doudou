@@ -1,0 +1,60 @@
+.random {
+  height: 115vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.random h1 {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 50px;
+}
+.random h2 {
+  color: var(--header-color);
+  margin-bottom: 16px;
+}
+
+.event-poster {
+  width: auto;
+  height: auto;
+  max-height: 70%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+}
+
+.random-link {
+  height: 40vh;
+}
+
+.cta-random {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.cta:hover {
+  border-color: #e6b504;
+}
+.cta:focus,
+.cta:focus-visible {
+  outline: 4px auto #e6b504;
+}
+.event_info {
+  color: black;
+
+  margin-bottom: 16px;
+}
+
+.event_url {
+  color: var(--title-color);
+  font-size: 1.5rem;
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+:root {
+  --background-color: #f5f9fa;
+  --header-color: #b1e0dc;
+  --title-color: #37414a;
+  --secondary-color: #d67a5e;
+  --title-font: "Baloo 2";
+  --text-font: "Poppins";
+}
+
+h1 {
+  font-family: var(--title-font);
+  color: var(--title-font);
+}
+
+h2 {
+  font-family: var(--title-font);
+  color: var(--title-font);
+}
+
+p {
+  font-family: var(--text-font);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-family: var(--title-font);
+}
