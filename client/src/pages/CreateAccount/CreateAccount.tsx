@@ -8,6 +8,7 @@ function CreateAccount() {
 
   return (
     <div className="create-account">
+      <img src="..\src\assets\images\lapin_4.png" alt="" />
       <h1>Merci de rejoindre la communauté du Doudou</h1>
       <form onSubmit={handleSubmit} className="form-account">
         <label htmlFor="email">E-mail</label>

@@ -1,7 +1,12 @@
 .card-event-section {
-  height: 20em;
-  max-height: 30em;
+  height: 30em;
+  max-height: 40em;
   margin: 0 0 2em 0;
+  text-align: right;
+}
+
+.event-poster-card {
+  height: 30em;
 }
 
 .card-event-detail :first-child {
